@@ -95,11 +95,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\assets\demo\chart-area-demo.js" />
+    <Content Include="Assets\assets\demo\chart-bar-demo.js" />
+    <Content Include="Assets\assets\demo\chart-pie-demo.js" />
+    <Content Include="Assets\assets\demo\datatables-demo.js" />
+    <Content Include="Assets\assets\img\error-404-monochrome.svg" />
+    <Content Include="Assets\css\styles.css" />
+    <Content Include="Assets\js\datatables-simple-demo.js" />
+    <Content Include="Assets\js\scripts.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -107,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -117,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
